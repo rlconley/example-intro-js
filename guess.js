@@ -7,6 +7,11 @@ let compNumber = 90;
 let userGuess = prompt("Guess a number: ");
 console.log("User guessed:", userGuess);
 
+if (Number(userGuess)) {
+  console.log("User guess is valid");
+} else {
+  console.log("Guess is invalid");
+}
 // make the computer tell the user whether their guess is
 // too high, too low, or just right
 // if not just right, user gets one more guess
