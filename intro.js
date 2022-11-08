@@ -139,3 +139,22 @@ let ordinalized = ordinal(25);
 // if you want to use what the function returns, you need to assign it to a variable
 // otherwise the program returns the value to memory and it eventually gets picked up in garbage collection
 console.log(ordinalized);
+
+let names = ["Capel", "Daniel", "Jerome", "John"];
+let capNames = [];
+
+for (let name of names) {
+  capNames.push(name.toUpperCase());
+  // transform each element of the old array one at a time and push to new array
+}
+
+let shortNames = [];
+for (let name of names) {
+  if (name.length < 5) {
+    // push element to new array if it meets the condition
+    shortNames.push(name);
+  }
+}
+
+console.log("Cap Names: ", capNames);
+console.log("Short names: ", shortNames);
