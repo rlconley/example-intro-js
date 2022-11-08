@@ -111,3 +111,31 @@ while (uncScore < 21 && dukeScore < 21) {
 }
 // after all the code in the {} runs
 console.log("Score: UNC - ", uncScore, "Duke - ", dukeScore);
+
+// for loops
+// do something a specific number of times
+// Play 8 chords on the 🪗
+for (let count = 0; count < 8; count++) {
+  console.log(count, " new 🪗 chord");
+}
+
+// functions
+function ordinal(num) {
+  // during the execution of this block, num is assigned whatever value was passed as an argument inside the () when the function was called. The value re-sets when the function is done executing.
+  if ((num > 3 && num <= 20) || (num < -3 && num >= -20)) {
+    return num + "th";
+  } else if (Math.abs(num % 10) === 1) {
+    return num + "st";
+  } else if (Math.abs(num % 10) === 2) {
+    return num + "nd";
+  } else if (Math.abs(num % 10) === 3) {
+    return num + "rd";
+  }
+  return num + "th";
+}
+
+// have to call the function with argument(s) in order for the code block to execute
+let ordinalized = ordinal(25);
+// if you want to use what the function returns, you need to assign it to a variable
+// otherwise the program returns the value to memory and it eventually gets picked up in garbage collection
+console.log(ordinalized);
