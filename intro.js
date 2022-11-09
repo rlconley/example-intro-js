@@ -158,3 +158,11 @@ for (let name of names) {
 
 console.log("Cap Names: ", capNames);
 console.log("Short names: ", shortNames);
+
+// if we want to keep track of the index while we are looping through an array, we can use a for loop
+
+let counties = ["Granville", "Harnett", "Orange", "Duplin", "Durham", "Wake"];
+
+for (let idx = 0; idx < counties.length; idx++) {
+  console.log(`${counties[idx]} was number ${idx + 1} to report.`);
+}
